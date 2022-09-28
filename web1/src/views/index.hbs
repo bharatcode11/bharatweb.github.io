@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bharatweb
+
+
+
+
+         
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/element.css">
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="img.jpg">
+      
+        <nav>
+            <div class="nav left">
+             <h1><i class="fa-solid fa-snowflake" style="color: green;"></i>
+            WELCOME <i class="fa-solid fa-snowflake"  style="color: green;"></i> </h1>
+            </div>
+            <div class="nav right">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="login">Sign Up</a></li>
+                <li><a href=""></a></li>
+                <li><input type="text" id="search"></li>
+            </ul>
+            </div>
+        </nav>
+        </div>
+
+    <header>
+      
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo tempora doloremque, optio ipsa expedita rem iusto repellendus ad praesentium earum hic vero omnis ab minus magni facere quo ullam similique?</p>
+        <head>
+            <div class="lefthead">
+        <div class="img1">
+            <div class="img2">
+            <img class="one"src="img2.jpg">
+            <div class="overlay">
+                <div class="comhead">
+                    breakfast
+                </div>
+            </div>
+            </div>
+            <div class="img3">
+            <img class="two"src="img3.jpg">
+            <div class="overlay">
+                <div class="comhead">
+                    lunch
+                </div>
+            </div>
+
+            </div>
+            <div class="img4">
+            <img class="three" src="img4.jpg">
+            <div class="overlay">
+                <div class="comhead">
+                    dinner
+                </div>
+            </div>
+            </div>
+          
+        </div>
+        <div class="number">
+            <div class="food" >1</div>
+            <div class="food2">2</div>
+            <div class="food3">3</div>
+        </div>
+       
+            </div>
+          
+        </head>
+    </header>
+    </div>
+</body>
+<script>
+    
+    const two =  document.getElementsByClassName("two")[0]
+    const three =  document.getElementsByClassName("three")[0]
+    const one =  document.getElementsByClassName("one")[0];
+    const number =  document.querySelectorAll(".number");
+    const overlay =  document.querySelectorAll(".overlay")[0];
+    const overlay1 = document.querySelectorAll(".overlay")[1];
+    const overlay2 = document.querySelectorAll(".overlay")[2];
+    console.log(overlay)
+    number.forEach(element=>{
+        element.addEventListener("click",(e)=>{
+         
+           
+            let ram = e.target
+            if(ram.innerText=="1"){
+                one.style.transform= "translate(10px,10px)"
+                three.style.transform = "none"
+                overlay.style.display = "block"
+                overlay1.style.display ="none"
+                overlay2.style.display = "none"
+                overlay.style.transition = "1s"
+                
+
+                
+            }else if(ram.innerText=="2"){
+                two.style.transform="translate(10px,10px)"
+                one.style.transform = "none"
+                overlay1.style.display = "block"
+                overlay.style.display = "none"
+                overlay2.style.display = "none"
+            }else if(ram.innerText=="3"){
+                 three.style.transform = "translate(10px,10px)"
+                 two.style.transform ="none"
+                 one.style.transform = "none"
+                 overlay2.style.display = "block"
+                 overlay1.style.display ="none"
+
+overlay.style.display = "none"
+            }else{
+                console.log("wrong")
+            }
+        })
+    })
+
+</script>
+    
+
+</html>

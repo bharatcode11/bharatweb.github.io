@@ -1,0 +1,218 @@
+*{
+    margin: 10px;
+    padding: 0;
+    font-family: sans-serif;
+}
+.fa-solid{
+    font-size: 20px;
+    animation:  swing 1s linear infinite;
+
+}
+@keyframes swing {
+   0%{
+    transform: rotate(0)
+   }
+   100%{
+    transform: rotate(360deg);
+   }
+    
+   
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 15vh;
+    
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  
+}
+.right ul li{
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.right ul li a{
+    font-size: 12px;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: greenyellow;
+
+    transition: 0.3s;
+
+}
+.right ul li a:hover{
+    
+    color: red;
+    font-size: 18px;
+}
+
+
+
+img{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search{
+    margin-left: 20px;
+   width: 60%;
+    border-radius: 10px;
+    
+}
+.img1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+   
+  justify-content: center;
+ 
+    
+}
+.one{
+    width: 200px;
+    height: 200px;
+   
+    
+    
+    
+}
+.two{
+    width: 200px;
+    height: 200px;
+}
+.three{
+    width: 200px;
+    height: 200px;
+}
+.lefthead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+   
+}
+.number{
+    display: flex;
+    position: relative;
+    top: -310px;
+    
+}
+
+.food{
+    border: 2px solid black;
+    background: #db1960;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+}
+.food2{
+    border: 2px solid black;
+    background: #db1960;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+}
+.food3{
+    border: 2px solid black;
+    background: #db1960;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+}
+h1{
+    color: aliceblue;
+}
+.overlay{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right,pink,blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 31px;
+    text-transform: uppercase;
+    top: 760px;
+    
+    /* left: 10px; */
+    overflow: hidden;
+    opacity: 0.6;
+    display: none; 
+    
+    margin-top: 12px;
+    margin-left: 18px;
+}
+.comhead{
+    text-align: center;
+    /* position: absolute; */
+    /* top: 0; */
+    display: block;
+    margin: 84px auto;
+}
+.main{
+    height: 68vh;
+    width: 25%;
+    background: #ff96bd;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    opacity: 0.6;
+    box-shadow: inset -4px 8px 20px 1px green;
+
+
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: inset 3px 2px 8px 3px green;
+    font-size: 13px;
+    transition: 0.3s;
+
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background: rgb(120, 252, 120);
+    color: black;
+}
